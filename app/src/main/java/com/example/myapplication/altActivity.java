@@ -24,7 +24,7 @@ public class altActivity extends AppCompatActivity {
 
         return imagesList.get(index);
     }
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,16 +38,16 @@ public class altActivity extends AppCompatActivity {
         imagesList.add(getResources().getDrawable(R.drawable.logo3));
 
         altButton.setOnClickListener(new View.OnClickListener() {
-                                         public void onClick(View v) {
-                                            altImage.setImageDrawable(getNextImage(index));
+                 public void onClick(View v) {
+                     altImage.setImageDrawable(getNextImage(index));
 
-                                            index++;
+                     index++;
 
-                                            if(index >= imagesList.size()) {
-                                                index = 0;
-                                            }
-                                         }
-                                     }
+                     if (index >= imagesList.size()) {
+                         index = 0;
+                     }
+                 }
+             }
         );
     }
 }
