@@ -34,4 +34,11 @@
         android:textSize="24dp"
         android:text="Ok, Let's go" />
 
+    <Button
+        android:id="@+id/tap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="TAP" />
+
 </LinearLayout>

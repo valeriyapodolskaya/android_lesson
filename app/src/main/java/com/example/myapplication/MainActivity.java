@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button mainButton;
     Button transButton;
     EditText edit;
+    Button TAP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mainButton = findViewById(R.id.main_button);
         transButton = findViewById(R.id.trans_button);
         edit = findViewById(R.id.main_edit);
+        TAP=findViewById(R.id.tap_button);
 
         mainButton.setOnClickListener(
             new View.OnClickListener() {
@@ -45,7 +47,21 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+
+        TAP.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+
+                        startActivity(intent);
+                    }
+                }
+        );
     }
+
+
 
 
 }
